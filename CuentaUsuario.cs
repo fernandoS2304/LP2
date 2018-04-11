@@ -4,7 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+<<<<<<< HEAD
    public class CuentaUsuario
+=======
+    class CuentaUsuario
+>>>>>>> 7f0dc62dc82c8ea4ce7b9b11c5c971f9f7a7b3f3
     {
         private int idUsario;
         private string nombreUsuario;
@@ -45,6 +49,7 @@ using System.Threading.Tasks;
 			return password;
 		}
 	    }
+<<<<<<< HEAD
 
 	    public Permiso Perm{
 	    	get{
@@ -54,6 +59,8 @@ using System.Threading.Tasks;
 	    		permiso = value;
 	    	}
 	    }
+=======
+>>>>>>> 7f0dc62dc82c8ea4ce7b9b11c5c971f9f7a7b3f3
         
     }
 

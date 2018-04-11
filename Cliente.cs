@@ -21,7 +21,11 @@ using System.Threading.Tasks;
             this.CuentaBancaria = cuentaBancaria;
         }
 
+<<<<<<< HEAD
         public int Id_cliente{
+=======
+        public int id_cliente{
+>>>>>>> 7f0dc62dc82c8ea4ce7b9b11c5c971f9f7a7b3f3
 		set{
 			this.id_cliente = value;
 		}
@@ -30,7 +34,11 @@ using System.Threading.Tasks;
 		}
 		}
 		
+<<<<<<< HEAD
 		public int Telefono{
+=======
+		public int telefono{
+>>>>>>> 7f0dc62dc82c8ea4ce7b9b11c5c971f9f7a7b3f3
 		set{
 			this.telefono = value;
 		}
@@ -39,7 +47,11 @@ using System.Threading.Tasks;
 		}
 		}
 		
+<<<<<<< HEAD
 		public string Direccion{
+=======
+		public string direccion{
+>>>>>>> 7f0dc62dc82c8ea4ce7b9b11c5c971f9f7a7b3f3
 		set{
 			this.direccion = value;
 		}
@@ -48,7 +60,11 @@ using System.Threading.Tasks;
 		}
 	    }
 		
+<<<<<<< HEAD
 		public string CuentaBancaria{
+=======
+		public string cuentaBancaria{
+>>>>>>> 7f0dc62dc82c8ea4ce7b9b11c5c971f9f7a7b3f3
 		set{
 			this.cuentaBancaria = value;
 		}

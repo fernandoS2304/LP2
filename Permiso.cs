@@ -5,7 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 
+<<<<<<< HEAD
     public class Permiso
+=======
+    class Permiso
+>>>>>>> 7f0dc62dc82c8ea4ce7b9b11c5c971f9f7a7b3f3
     {
         private int idPermiso;
         private string nombre;
@@ -20,7 +24,11 @@ using System.Threading.Tasks;
             this.descripcion = descripcion;
         }
 
+<<<<<<< HEAD
         public int IdPermiso{
+=======
+        public string IdPermiso{
+>>>>>>> 7f0dc62dc82c8ea4ce7b9b11c5c971f9f7a7b3f3
 		set{
 			this.idPermiso = value;
 		}

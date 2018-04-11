@@ -11,7 +11,7 @@ namespace panaderia
         private string ruc;
         private string nombreEmpresa;
 
-        public Empresa(string ruc, string nombreEmpresa)
+        public Empresa(string ruc, string nombreEmpresa : base(id_cliente,telefono,direccion,cuentaBancaria))
         {
             this.Ruc = ruc;
             this.NombreEmpresa = nombreEmpresa;

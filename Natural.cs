@@ -12,7 +12,7 @@ namespace panaderia
         private string nombres;
         private string apellidos;
 
-        public Natural(string dni, string nombres, string apellidos)
+        public Natural(string dni, string nombres, string apellidos: base(id_cliente,telefono,direccion,cuentaBancaria))
         {
             this.Dni = dni;
             this.Nombres = nombres;

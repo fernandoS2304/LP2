@@ -1,0 +1,1 @@
+public enum turno {M,T,N}

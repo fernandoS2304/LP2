@@ -11,18 +11,22 @@ public class Panaderia{
 	private List<producto> _productos;
 	
 	public Panaderia(int idPanaderia, string nombre, string direccion, int telefono){
-		this.IdPanaderia = idPanaderia;
-        this.Nombre = nombre;
-        this.Direccion = direccion;
-        this.Telefono = telefono;
+		this.idPanaderia = idPanaderia;
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.telefono = telefono;
 		_usuarios = new List<CuentaUsuario>();
 		_almacenes = new List<almacen>();
 		_pedidos = new List<pedido>();
 		_clientes = new List<Cliente>();
-		_productos = new List<Producto>();
+		_productos = new List<producto>();
 	}	
 	
+<<<<<<< HEAD
+	public int IdPanaderia{
+=======
 	public string IdPanaderia{
+>>>>>>> 7f0dc62dc82c8ea4ce7b9b11c5c971f9f7a7b3f3
 		set{
 			this.idPanaderia = value;
 		}

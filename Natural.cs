@@ -5,13 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 
 
+<<<<<<< HEAD
+    public class Natural : Cliente
+=======
     class Natural : Cliente
+>>>>>>> 7f0dc62dc82c8ea4ce7b9b11c5c971f9f7a7b3f3
     {
         private string dni;
         private string nombres;
         private string apellidos;
 
-        public Natural(string dni, string nombres, string apellidos: base(id_cliente,telefono,direccion,cuentaBancaria))
+        public Natural(int id_cliente, int telefono, string direccion, string cuentaBancaria,string dni, string nombres, string apellidos) : base(id_cliente,telefono,direccion,cuentaBancaria)
         {
             this.Dni = dni;
             this.Nombres = nombres;

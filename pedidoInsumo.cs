@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System;
 public class pedidoInsumo : pedido{
 	private List<ingrediente> _listaInsumos;
 	private almacen _almacenOrigen;
@@ -12,7 +13,7 @@ public class pedidoInsumo : pedido{
 		this._almacenFin = _almacenFin;
 	}
 
-	public pedidoInsumo(int _idPedido, estado _estadoPedido, usuario _cuentaUsuario, DateTime _registroPedido, DateTime _entregaPedido, almacen _almacenOrigen, almacen _almacenFin) : base(_idPedido, _estadoPedido, _cuentaUsuario, _registroPedido, _entregaPedido){ 
+	public pedidoInsumo(int _idPedido, estado _estadoPedido, CuentaUsuario _cuentaUsuario, DateTime _registroPedido, DateTime _entregaPedido, almacen _almacenOrigen, almacen _almacenFin) : base(_idPedido, _estadoPedido, _cuentaUsuario, _registroPedido, _entregaPedido){ 
 		this._listaInsumos = new List<ingrediente>();
 		this._almacenOrigen = _almacenFin;
 		this._almacenFin = _almacenFin;	

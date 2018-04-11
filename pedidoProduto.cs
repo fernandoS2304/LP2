@@ -1,24 +1,25 @@
 using System.Collections.Generic;
+using System;
 public class pedidoProducto : pedido{
-	private cliente _Cliente;
+	private Cliente _Cliente;
 	private List<ingrediente> _listaProductos;
 	private documentoPago _docPago;
 
 	public pedidoProducto(){}
 
-	public pedidoProducto(cliente _Cliente, documentoPago _docPago){
+	public pedidoProducto(Cliente _Cliente, documentoPago _docPago){
 		this._Cliente = _Cliente;
 		this._listaProductos = new List<ingrediente>();
 		this._docPago = _docPago;
 	}
 
-	public pedidoProducto(int _idPedido, estado _estadoPedido, usuario _cuentaUsuario, DateTime _registroPedido, DateTime _entregaPedido, cliente _Cliente, documentoPago _docPago) : base(_idPedido, _estadoPedido, _cuentaUsuario, _registroPedido, _entregaPedido){
+	public pedidoProducto(int _idPedido, estado _estadoPedido, CuentaUsuario _cuentaUsuario, DateTime _registroPedido, DateTime _entregaPedido, Cliente _Cliente, documentoPago _docPago) : base(_idPedido, _estadoPedido, _cuentaUsuario, _registroPedido, _entregaPedido){
 		this._Cliente = _Cliente;
 		this._listaProductos = new List<ingrediente>();
 		this._docPago = _docPago;	
 	}
 
-	public cliente Cliente{
+	public Cliente Cliente{
 		get{
 			return _Cliente;
 		}

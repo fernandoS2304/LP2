@@ -3,12 +3,12 @@ public class documentoPago{
 	private tipoDocPago _docPago;
 	private float _total;
 	private int _idPedido;
-	private cliente _Cliente;
+	private Cliente _Cliente;
 	private bool _registrada;
 
-	public dovumentoPago(){}
+	public documentoPago(){}
 
-	public documentoPago(string _idDoc, tipoDocPago _docPago, float _total, int _idPedido, cliente _Cliente, bool _registrada){
+	public documentoPago(string _idDoc, tipoDocPago _docPago, float _total, int _idPedido, Cliente _Cliente, bool _registrada){
 		this._idDoc = _idDoc;
 		this._docPago = _docPago;
 		this._total =  _total;
@@ -53,7 +53,7 @@ public class documentoPago{
 		}
 	}
 
-	public cliente Cliente{
+	public Cliente Client{
 		get{
 			return _Cliente;
 		}

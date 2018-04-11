@@ -9,7 +9,7 @@ using System.Threading.Tasks;
         private string ruc;
         private string nombreEmpresa;
 
-        public Empresa(string ruc, string nombreEmpresa : base(id_cliente,telefono,direccion,cuentaBancaria))
+        public Empresa(int id_cliente, int telefono, string direccion, string cuentaBancaria,string ruc, string nombreEmpresa ): base(id_cliente,telefono,direccion,cuentaBancaria)
         {
             this.Ruc = ruc;
             this.NombreEmpresa = nombreEmpresa;

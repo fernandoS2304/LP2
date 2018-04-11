@@ -11,25 +11,50 @@ public class Panaderia{
 	private List<producto> _productos;
 	
 	public Panaderia(int idPanaderia, string nombre, string direccion, int telefono){
-		this.IdPanaderia = idPanaderia;
-        this.Nombre = nombre;
-        this.Direccion = direccion;
-        this.Telefono = telefono;
+		this.idPanaderia = idPanaderia;
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.telefono = telefono;
 		_usuarios = new List<CuentaUsuario>();
 		_almacenes = new List<almacen>();
 		_pedidos = new List<pedido>();
 		_clientes = new List<Cliente>();
-		_productos = new List<Producto>();
+		_productos = new List<producto>();
 	}	
 	
-	public int IdPanaderia { get => idPanaderia; set => idPanaderia = value; }
-    public string Nombre { get => nombre; set => nombre = value; }
-    public string Direccion { get => direccion; set => direccion = value; }
-    public int Telefono { get => telefono; set => telefono = value; }
-    public List<CuentaUsuario> Usuarios { get => _usuarios; set => _usuarios = value; }
-    public List<almacen> Almacenes { get => _almacenes; set => _almacenes = value; }
-    public List<pedido> Pedidos { get => _pedidos; set => _pedidos = value; }
-    public List<Cliente> Clientes { get => _clientes; set => _clientes = value; }
-    public List<producto> Productos { get => _productos; set => _productos = value; }
-    }
+	public int IdPanaderia{
+		set{
+			this.idPanaderia = value;
+		}
+		get{
+			return idPanaderia;
+		}
+	}
+		
+    public string Nombre{
+		set{
+			this.nombre = value;
+		}
+		get{
+			return nombre;
+		}
+	}
+	
+	public string Direccion{
+		set{
+			this.direccion = value;
+		}
+		get{
+			return direccion;
+		}
+	}
+		
+	public int Telefono{
+		set{
+			this.telefono = value;
+		}
+		get{
+			return telefono;
+		}
+	}
 }

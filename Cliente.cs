@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace panaderia
-{
+
+
     public class Cliente
     {
         private int id_cliente;
@@ -21,9 +21,39 @@ namespace panaderia
             this.CuentaBancaria = cuentaBancaria;
         }
 
-        public int Id_cliente { get => id_cliente; set => id_cliente = value; }
-        public int Telefono { get => telefono; set => telefono = value; }
-        public string Direccion { get => direccion; set => direccion = value; }
-        public string CuentaBancaria { get => cuentaBancaria; set => cuentaBancaria = value; }
-    }
+        public int Id_cliente{
+		set{
+			this.id_cliente = value;
+		}
+		get{
+			return id_cliente;
+		}
+		}
+		
+		public int Telefono{
+		set{
+			this.telefono = value;
+		}
+		get{
+			return telefono;
+		}
+		}
+		
+		public string Direccion{
+		set{
+			this.direccion = value;
+		}
+		get{
+			return direccion;
+		}
+	    }
+		
+		public string CuentaBancaria{
+		set{
+			this.cuentaBancaria = value;
+		}
+		get{
+			return cuentaBancaria;
+		}
+		}
 }

@@ -7,8 +7,8 @@ public class insumo{
 
 	public insumo(int _idInsumo, string _descripcion, unidadMedida _unidad){
 		this._idInsumo = _idInsumo;
-		this.descripcion = _descripcion;
-		this.unidad = _unidad;
+		this._descripcion = _descripcion;
+		this._unidad = _unidad;
 	}
 
 	public int IdInsumo{

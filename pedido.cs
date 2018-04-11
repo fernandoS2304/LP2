@@ -3,13 +3,13 @@ using System;
 public class pedido{
 	private int _idPedido;
 	private estado _estadoPedido;
-	private usuario _cuentaUsuario;
+	private CuentaUsuario _cuentaUsuario;
 	private DateTime _registroPedido;
 	private DateTime _entregaPedido;
 
 	public pedido(){}
 
-	public pedido(int _idPedido, estado _estadoPedido, usuario _cuentaUsuario, DateTime _registroPedido, DateTime _entregaPedido){
+	public pedido(int _idPedido, estado _estadoPedido, CuentaUsuario _cuentaUsuario, DateTime _registroPedido, DateTime _entregaPedido){
 		this._idPedido = _idPedido;
 		this._estadoPedido = _estadoPedido;
 		this._cuentaUsuario = _cuentaUsuario;
@@ -35,7 +35,7 @@ public class pedido{
 		}
 	}
 
-	public usuario CuentaUsuario{
+	public CuentaUsuario CuentaUsuer{
 		get{
 			return _cuentaUsuario;
 		}

@@ -4,27 +4,56 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace panaderia
-{   enum Turno {M,T,N}
-    enum Puesto {Panaderoo,JefePanadero,Supervisor,Gerente }
+
+	
     public class Empleado
     {
         private int idEmpleado;
         private string nombre;
-        private Turno turno;
-        private Puesto puesto;
+        private turno turnoEmpleado;
+        private puesto puestoEmpleado;
 
-        public Empleado(int idEmpleado, string nombre, Turno turno, Puesto puesto)
+        public Empleado(int idEmpleado, string nombre, turno turno, puesto puesto)
         {
-            this.IdEmpleado = idEmpleado;
-            this.Nombre = nombre;
-            this.Turno = turno;
-            this.Puesto = puesto;
+            this.idEmpleado = idEmpleado;
+            this.nombre = nombre;
+            this.turnoEmpleado = turno;
+            this.puestoEmpleado = puesto;
         }
 
-        public int IdEmpleado { get => idEmpleado; set => idEmpleado = value; }
-        public string Nombre { get => nombre; set => nombre = value; }
-        public Turno Turno { get => turno; set => turno = value; }
-        public Puesto Puesto { get => puesto; set => puesto = value; }
-    }
-}
+        public int IdEmpleado{
+		set{
+			this.idEmpleado = value;
+		}
+		get{
+			return idEmpleado;
+		}
+		}
+		
+        public string Nombre{
+		set{
+			this.nombre = value;
+		}
+		get{
+			return nombre;
+		}
+	    }
+		
+        public turno TurnoEmpleado{
+		set{
+			this.turnoEmpleado = value;
+	    }
+		get{
+			return turnoEmpleado;
+		}
+		}
+		
+		public puesto PuestoEmpleado{
+		set{
+			this.puestoEmpleado = value;
+	    }
+		get{
+			return puestoEmpleado;
+		}
+		}
+	}

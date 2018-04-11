@@ -1,0 +1,1 @@
+public enum estado {Aprobado, Pendiente, Listo, Cancelado}

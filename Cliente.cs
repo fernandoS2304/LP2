@@ -21,9 +21,39 @@ namespace panaderia
             this.CuentaBancaria = cuentaBancaria;
         }
 
-        public int Id_cliente { get => id_cliente; set => id_cliente = value; }
-        public int Telefono { get => telefono; set => telefono = value; }
-        public string Direccion { get => direccion; set => direccion = value; }
-        public string CuentaBancaria { get => cuentaBancaria; set => cuentaBancaria = value; }
-    }
+        public int id_cliente{
+		set{
+			this.id_cliente = value;
+		}
+		get{
+			return id_cliente;
+		}
+		}
+		
+		public int telefono{
+		set{
+			this.telefono = value;
+		}
+		get{
+			return telefono;
+		}
+		}
+		
+		public string direccion{
+		set{
+			this.direccion = value;
+		}
+		get{
+			return direccion;
+		}
+	    }
+		
+		public string cuentaBancaria{
+		set{
+			this.cuentaBancaria = value;
+		}
+		get{
+			return cuentaBancaria;
+		}
+		}
 }

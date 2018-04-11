@@ -6,14 +6,14 @@ public class pedidoInsumo : pedido{
 
 	public pedidoInsumo(){}
 
-	public pedidoInsumo(almacen _almacenOrigen, almacen _almacenFin){
-		this._listaInsumos = new List<ingrediente>();
+	public pedidoInsumo(Lista<ingrediente> _listaInsumos, almacen _almacenOrigen, almacen _almacenFin){
+		this._listaInsumos = _listaInsumos;
 		this._almacenOrigen = _almacenFin;
 		this._almacenFin = _almacenFin;
 	}
 
-	public pedidoInsumo(int _idPedido, estado _estadoPedido, usuario _cuentaUsuario, DateTime _registroPedido, DateTime _entregaPedido, almacen _almacenOrigen, almacen _almacenFin) : base(_idPedido, _estadoPedido, _cuentaUsuario, _registroPedido, _entregaPedido){ 
-		this._listaInsumos = new List<ingrediente>();
+	public pedidoInsumo(int _idPedido, estado _estadoPedido, usuario _cuentaUsuario, DateTime _registroPedido, DateTime _entregaPedido, List<ingrediente> _listaInsumos, almacen _almacenOrigen, almacen _almacenFin) : base(_idPedido, _estadoPedido, _cuentaUsuario, _registroPedido, _entregaPedido){ 
+		this._listaInsumos = _listaInsumos;
 		this._almacenOrigen = _almacenFin;
 		this._almacenFin = _almacenFin;	
 	}

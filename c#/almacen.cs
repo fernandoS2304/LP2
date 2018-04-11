@@ -6,10 +6,10 @@ public class almacen{
 
 	public almacen(){}
 
-	public almacen(int _idAlmacen, string _nombre){
+	public almacen(int _idAlmacen, string _nombre, List<ingrediente> _stock){
 		this._idAlmacen = _idAlmacen;
 		this._nombre = _nombre;
-		this._stock = new List<ingrediente>();
+		this._stock = _stock;
 	}
 
 	public int IdAlmacen{

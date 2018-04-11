@@ -6,15 +6,15 @@ public class pedidoProducto : pedido{
 
 	public pedidoProducto(){}
 
-	public pedidoProducto(cliente _Cliente, documentoPago _docPago){
+	public pedidoProducto(cliente _Cliente, List<ingrediente> _listaProductos, documentoPago _docPago){
 		this._Cliente = _Cliente;
-		this._listaProductos = new List<ingrediente>();
+		this._listaProductos = _listaProductos;
 		this._docPago = _docPago;
 	}
 
-	public pedidoProducto(int _idPedido, estado _estadoPedido, usuario _cuentaUsuario, DateTime _registroPedido, DateTime _entregaPedido, cliente _Cliente, documentoPago _docPago) : base(_idPedido, _estadoPedido, _cuentaUsuario, _registroPedido, _entregaPedido){
+	public pedidoProducto(int _idPedido, estado _estadoPedido, usuario _cuentaUsuario, DateTime _registroPedido, DateTime _entregaPedido, cliente _Cliente, List<ingrediente> _listaProductos, documentoPago _docPago) : base(_idPedido, _estadoPedido, _cuentaUsuario, _registroPedido, _entregaPedido){
 		this._Cliente = _Cliente;
-		this._listaProductos = new List<ingrediente>();
+		this._listaProductos = _listaProductos;
 		this._docPago = _docPago;	
 	}
 

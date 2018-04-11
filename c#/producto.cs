@@ -7,10 +7,10 @@ public class producto{
 
 	public producto(){}
 
-	public producto(int _idProducto, string _nombreProducto, float _precio){
+	public producto(int _idProducto, string _nombreProducto, List<ingrediente> _receta, float _precio){
 		this._idProducto = _idProducto;
 		this._nombreProducto = _nombreProducto;
-		this._receta = new List<ingrediente>();
+		this._receta = _receta;
 		this._precio = _precio;
 	}
 

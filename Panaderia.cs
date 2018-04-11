@@ -22,14 +22,39 @@ public class Panaderia{
 		_productos = new List<Producto>();
 	}	
 	
-	public int IdPanaderia { get => idPanaderia; set => idPanaderia = value; }
-    public string Nombre { get => nombre; set => nombre = value; }
-    public string Direccion { get => direccion; set => direccion = value; }
-    public int Telefono { get => telefono; set => telefono = value; }
-    public List<CuentaUsuario> Usuarios { get => _usuarios; set => _usuarios = value; }
-    public List<almacen> Almacenes { get => _almacenes; set => _almacenes = value; }
-    public List<pedido> Pedidos { get => _pedidos; set => _pedidos = value; }
-    public List<Cliente> Clientes { get => _clientes; set => _clientes = value; }
-    public List<producto> Productos { get => _productos; set => _productos = value; }
-    }
+	public string IdPanaderia{
+		set{
+			this.idPanaderia = value;
+		}
+		get{
+			return idPanaderia;
+		}
+	}
+		
+    public string Nombre{
+		set{
+			this.nombre = value;
+		}
+		get{
+			return nombre;
+		}
+	}
+	
+	public string Direccion{
+		set{
+			this.direccion = value;
+		}
+		get{
+			return direccion;
+		}
+	}
+		
+	public int Telefono{
+		set{
+			this.telefono = value;
+		}
+		get{
+			return telefono;
+		}
+	}
 }

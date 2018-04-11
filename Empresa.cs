@@ -4,8 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace panaderia
-{
     public class Empresa : Cliente
     {
         private string ruc;
@@ -17,7 +15,23 @@ namespace panaderia
             this.NombreEmpresa = nombreEmpresa;
         }
 
-        public string Ruc { get => ruc; set => ruc = value; }
-        public string NombreEmpresa { get => nombreEmpresa; set => nombreEmpresa = value; }
+        public string Ruc{
+		set{
+			this.ruc = value;
+		}
+		get{
+			return ruc;
+		}
+	    }
+		
+		public string NombreEmpresa{
+		set{
+			this.nombreEmpresa = value;
+		}
+		get{
+			return nombreEmpresa;
+		}
+	    }
+        
     }
-}
+

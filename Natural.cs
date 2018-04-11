@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace panaderia
-{
+
     class Natural : Cliente
     {
         private string dni;
@@ -19,8 +18,31 @@ namespace panaderia
             this.Apellidos = apellidos;
         }
 
-        public string Dni { get => dni; set => dni = value; }
-        public string Nombres { get => nombres; set => nombres = value; }
-        public string Apellidos { get => apellidos; set => apellidos = value; }
+        public string Dni{
+		set{
+			this.dni = value;
+		}
+		get{
+			return dni;
+		}
+	    }
+		
+		public string Nombres{
+		set{
+			this.nombres = value;
+		}
+		get{
+			return nombres;
+		}
+	    }
+		
+        public string Apellidos{
+		set{
+			this.apellidos = value;
+		}
+		get{
+			return apellidos;
+		}
+	    }
     }
-}
+

@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace panaderia
-{   enum Turno {M,T,N}
+
+	enum Turno {M,T,N}
     enum Puesto {Panaderoo,JefePanadero,Supervisor,Gerente }
     public class Empleado
     {
@@ -22,9 +22,39 @@ namespace panaderia
             this.Puesto = puesto;
         }
 
-        public int IdEmpleado { get => idEmpleado; set => idEmpleado = value; }
-        public string Nombre { get => nombre; set => nombre = value; }
-        public Turno Turno { get => turno; set => turno = value; }
-        public Puesto Puesto { get => puesto; set => puesto = value; }
-    }
-}
+        public int IdEmpleado{
+		set{
+			this.idEmpleado = value;
+		}
+		get{
+			return idEmpleado;
+		}
+		}
+		
+        public string Nombre{
+		set{
+			this.nombre = value;
+		}
+		get{
+			return nombre;
+		}
+	    }
+		
+        public Turno Turno{
+		get{
+			this.turno = value;
+	    }
+		get{
+			return turno;
+		}
+		}
+		
+		public Puesto Puesto{
+		get{
+			this.puesto = value;
+	    }
+		get{
+			return puesto;
+		}
+		}
+	}

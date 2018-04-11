@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace panaderia
-{
+
     class Permiso
     {
         private int idPermiso;
@@ -19,8 +18,31 @@ namespace panaderia
             this.Descripcion = descripcion;
         }
 
-        public int IdPermiso { get => idPermiso; set => idPermiso = value; }
-        public string Nombre { get => nombre; set => nombre = value; }
-        public string Descripcion { get => descripcion; set => descripcion = value; }
+        public string IdPermiso{
+		set{
+			this.idPermiso = value;
+		}
+		get{
+			return idPermiso;
+		}
+	    }
+        
+		public string Nombre{
+		set{
+			this.nombre = value;
+		}
+		get{
+			return nombre;
+		}
+	    }
+		
+        public string Descripcion{
+		set{
+			this.descripcion = value;
+		}
+		get{
+			return descripcion;
+		}
+	    }
     }
-}
+

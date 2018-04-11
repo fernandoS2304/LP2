@@ -4,8 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace panaderia
-{
     class CuentaUsuario
     {
         private int idUsario;
@@ -21,9 +19,32 @@ namespace panaderia
             this.Permiso = permiso;
         }
 
-        public int IdUsario { get => idUsario; set => idUsario = value; }
-        public string NombreUsuario { get => nombreUsuario; set => nombreUsuario = value; }
-        public string Password { get => password; set => password = value; }
-        internal Permiso Permiso { get => permiso; set => permiso = value; }
+        public int IdUsario{
+		set{
+			this.idUsario = value;
+		}
+		get{
+			return idUsario;
+		}
+		}
+		
+		public string NombreUsuario{
+		set{
+			this.nombreUsuario = value;
+		}
+		get{
+			return nombreUsuario;
+		}
+	    }
+		
+		public string Password{
+		set{
+			this.password = value;
+		}
+		get{
+			return password;
+		}
+	    }
+        
     }
-}
+

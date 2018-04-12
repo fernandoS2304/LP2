@@ -4,7 +4,7 @@ public class Insumo{
 	private String descripcion;
 	private unidadMed unidMed;
 	
-	public Almacen(int idInsumo,String descripcion,unidMed unidadMed){
+	public Insumo(int idInsumo,String descripcion,unidMed unidadMed){
 		this.idInsumo=idInsumo;
 		this.descripcion=descripcion;
 		this.unidadMed=unidadMed;

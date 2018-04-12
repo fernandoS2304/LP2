@@ -1,14 +1,14 @@
-importa java.util.ArrayList
+import java.util.ArrayList
 
 public class Panaderia{
 	private int idPanaderia;
 	private String nombre;
 	private String direccion;
 	private int telefono;
-	ArrayList<CuentaUsario> usuarios;
-	ArrayList<Almacen> almacenes;
-	ArrayList<Insumo> insumos;
-	ArrayList<cliente> clientes;
+	private ArrayList<CuentaUsario> usuarios;
+	private ArrayList<Almacen> almacenes;
+	private ArrayList<Insumo> insumos;
+	private ArrayList<cliente> clientes;
 	
 	public Panaderia(int idPanaderia,String nombre,String direccion,int telefono){
 		this.idPanaderia=idPanaderia;

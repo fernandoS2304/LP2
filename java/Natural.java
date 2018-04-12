@@ -11,6 +11,9 @@ public class Natural extends Cliente{
 		setApellidos(apellidos);
 	}
 
+    public Natural(){
+    }
+
 	public String getDNI() {
         return DNI;
     }

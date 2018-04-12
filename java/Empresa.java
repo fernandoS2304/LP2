@@ -9,6 +9,9 @@ public class Empresa extends Cliente{
 		setNombreEmpresa(nombreEmpresa);
 	}
 
+    public Empresa(){
+    }
+
 	public String getRuc() {
         return ruc;
     }

@@ -15,10 +15,10 @@ public class Panaderia{
 		this.nombre=nombre;
 		this.direccion=direccion;
 		this.telefono=telefono;
-		clientes = new ArrayList<Cliente>;
-		usarios = new ArrayList<CuentaUsario>;
-		almacenes = new ArrayList<Almacen>;
-		insumos = new ArrayList<Insumo>;
+		clientes = new ArrayList<Cliente>();
+		usarios = new ArrayList<CuentaUsario>();
+		almacenes = new ArrayList<Almacen>();
+		insumos = new ArrayList<Insumo>();
 	}
 	
 	public int getidPanaderia(){

@@ -50,6 +50,8 @@ public class pedidoProducto : pedido{
 	}
 	
 	public int subtotal(){
+		//solo para que úeda compilar
+		return 0;
 	}
 	
 	public void registrarDocPago(){

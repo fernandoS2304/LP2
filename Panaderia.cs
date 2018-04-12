@@ -22,11 +22,9 @@ public class Panaderia{
 		_productos = new List<producto>();
 	}	
 	
-<<<<<<< HEAD
+
 	public int IdPanaderia{
-=======
-	public string IdPanaderia{
->>>>>>> 7f0dc62dc82c8ea4ce7b9b11c5c971f9f7a7b3f3
+
 		set{
 			this.idPanaderia = value;
 		}

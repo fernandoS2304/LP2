@@ -53,30 +53,42 @@ public class Panaderia{
 		this.telefono=telefono;
 	}	
 	
-	public agregarCliente(Empresa c){
+	public void agregarCliente(Empresa c){
 		Cliente t=(Cliente) c;
 		clientes.add(t);
 	}
-	public agregarCliente(Natural c){
+	public void agregarCliente(Natural c){
 		Cliente t=(Cliente) c;
 		clientes.add(t);
 	}
-	public String consultarClientes(int i){
-		String cadena="";
-		Cliente m;
-		ArrayList<Cliente> lClienteAux=lCuenta.get(i).getlCliente();
-		System.out.println(lClienteAux.size());
-		for (int k=0;k<lClienteAux.size();k++) {
-			m = (Cliente) lClienteAux.get(k);
-			//System.out.println(m.ConsultarDatos());		
-			if (m instanceof PersonaNatural){
-					cadena = cadena + ((PersonaNatural)m).ConsultarDatos() + "\n";
-				}
-			if(m instanceof Empresa){
-					cadena = cadena + ((Empresa)m).ConsultarDatos() + "\n";
-			}
-		}
-		return cadena;
+	// public String consultarClientes(int i){
+		// String cadena="";
+		// Cliente m;
+		// ArrayList<Cliente> lClienteAux=lCuenta.get(i).getlCliente();
+		// System.out.println(lClienteAux.size());
+		// for (int k=0;k<lClienteAux.size();k++) {
+			// m = (Cliente) lClienteAux.get(k);
+			// //System.out.println(m.ConsultarDatos());		
+			// if (m instanceof PersonaNatural){
+					// cadena = cadena + ((PersonaNatural)m).ConsultarDatos() + "\n";
+				// }
+			// if(m instanceof Empresa){
+					// cadena = cadena + ((Empresa)m).ConsultarDatos() + "\n";
+			// }
+		// }
+		// return cadena;
+	// }
+	public void registrarUsuario(String nombU,String contrase){
+		
+	}
+	public void llenarAlmacen(String nombAlmacen){
+				
+	}
+	public void ingresarPedidoProducto(){
+		
+	}
+	public void ingresarPedidoInsumos(){
+		
 	}
 	
 }

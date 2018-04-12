@@ -40,7 +40,7 @@ public class CuentaUsuario{
 	}
 	public void verificacionDatos(String contras){
 		int count=0;
-		while(1){
+		while(true){
 			if(this.contrasenha!=contras){
 				System.out.println("Es una contrasenha invalida");
 				count++;

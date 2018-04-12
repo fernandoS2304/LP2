@@ -1,4 +1,4 @@
-public class Empleado (){
+public class Empleado{
 	private int ID;
 	private String nombre;
 	private Turno turno;

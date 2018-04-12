@@ -91,7 +91,7 @@ public class Panaderia{
 		
 	}
 	
-	public void imprimirDocPago(){
+	public void imprimirDocPago(Cliente clienteElegido){
 		
 	}
 	

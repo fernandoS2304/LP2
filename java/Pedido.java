@@ -1,5 +1,7 @@
 import java.util.Date;
 import java.text.SimpleDateFormat;
+import java.text.*;
+
 enum estadoPedido{Aprobado,Pendiente,Listo,Cancelado};
 public class Pedido{
 	private int idPedido;
@@ -9,8 +11,8 @@ public class Pedido{
 	private Date fechaEntrPed;
 	
 	public Pedido(){
-		fechaRegPed=new Date();
-		fechaEntrPed=new Date();
+		this.fechaRegPed=new Date();
+		this.fechaEntrPed=new Date();
 	}
 	
 	public Pedido(int idPedido,estadoPedido estadoPed,String fechaRegPed,String fechaEntrPed){
@@ -18,13 +20,22 @@ public class Pedido{
 		this.estadoPed=estadoPed;
 		//this.cuentaUs=cuentaUs;
 		
-		fechaRegPed=new Date();
-		fechaEntrPed=new Date();
-		SimpleDateFormat formt1=new SimpleDateFormat("dd/MM/yyyy");
-		this.fechaRegPed=formt1.parse(fechaRegPed);
-		SimpleDateFormat formt2=new SimpleDateFormat("dd/MM/yyyy");
-		this.fechaEntrPed=formt2.parse(fechaEntrPed);
+		String output;
+		try{
+			this.fechaRegPed=new Date();
+			SimpleDateFormat formt1=new SimpleDateFormat("dd/MM/yyyy");
+			this.fechaRegPed=formt1.parse(fechaRegPed);
+		}catch(ParseException e){
+			output="error";
+		}
 		
+		try{
+			this.fechaEntrPed=new Date();		
+			SimpleDateFormat formt2=new SimpleDateFormat("dd/MM/yyyy");
+			this.fechaEntrPed=formt2.parse(fechaEntrPed);
+		}catch(ParseException e){
+			output="error";
+		}		
 		//this.setfechaRegPed(fechaRegPed);
 		//this.setfechaEntrPed(fechaEntrPed);
 	}

@@ -16,7 +16,7 @@ public class Panaderia{
 		this.direccion=direccion;
 		this.telefono=telefono;
 		clientes = new ArrayList<Cliente>();
-		usarios = new ArrayList<CuentaUsario>();
+		usuarios = new ArrayList<CuentaUsuario>();
 		almacenes = new ArrayList<Almacen>();
 		insumos = new ArrayList<Insumo>();
 	}
@@ -49,10 +49,7 @@ public class Panaderia{
 		return telefono;
 	}
 	
-	public int setTelefono(int telefono){
+	public void setTelefono(int telefono){
 		this.telefono=telefono;
-	}
-	
-	
-	
+	}	
 }

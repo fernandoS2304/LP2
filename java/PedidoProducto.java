@@ -9,8 +9,8 @@ public class PedidoProducto extends Pedido{
 	public PedidoProducto(Cliente cliente,DocumentoPago documPago){
 		this.cliente=cliente;
 		this.documPago=documPago;
-		listcantidades= new ArrayList<int>();
-		listproductos= new ArrayList<int>();
+		listcantidades= new ArrayList<Integer>();
+		listproductos= new ArrayList<Integer>();
 	}
 	
 	public void setcliente(Cliente cliente){

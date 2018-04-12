@@ -40,6 +40,8 @@ public class PedidoProducto extends Pedido{
 	}
 	
 	public int subtotal(){
+		//solo para compilar
+		return 1;
 	}
 	
 	public void registrarDocPago(){

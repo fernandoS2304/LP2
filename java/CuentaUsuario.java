@@ -38,5 +38,18 @@ public class CuentaUsuario{
 	public Permiso getpermise(){
 		return this.permise;
 	}
-	
+	public void verificacionDatos(String contras){
+		int count=0;
+		while(1){
+			if(this.contrasenha!=contras){
+				System.out.println("Es una contrasenha invalida");
+				count++;
+				if(count==3)
+					System.out.println("Intente otra vez en 5 minutos");
+			}else if(this.contrasenha==contras){
+				break;
+			}
+		}
+		
+	}
 } 

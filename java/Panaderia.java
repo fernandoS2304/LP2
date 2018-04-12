@@ -52,4 +52,31 @@ public class Panaderia{
 	public void setTelefono(int telefono){
 		this.telefono=telefono;
 	}	
+	
+	public agregarCliente(Empresa c){
+		Cliente t=(Cliente) c;
+		clientes.add(t);
+	}
+	public agregarCliente(Natural c){
+		Cliente t=(Cliente) c;
+		clientes.add(t);
+	}
+	public String consultarClientes(int i){
+		String cadena="";
+		Cliente m;
+		ArrayList<Cliente> lClienteAux=lCuenta.get(i).getlCliente();
+		System.out.println(lClienteAux.size());
+		for (int k=0;k<lClienteAux.size();k++) {
+			m = (Cliente) lClienteAux.get(k);
+			//System.out.println(m.ConsultarDatos());		
+			if (m instanceof PersonaNatural){
+					cadena = cadena + ((PersonaNatural)m).ConsultarDatos() + "\n";
+				}
+			if(m instanceof Empresa){
+					cadena = cadena + ((Empresa)m).ConsultarDatos() + "\n";
+			}
+		}
+		return cadena;
+	}
+	
 }

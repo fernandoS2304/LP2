@@ -1,13 +1,14 @@
 enum unidadMed{kg,lt,cajas,unid};
+
 public class Insumo{
 	private int idInsumo;
 	private String descripcion;
 	private unidadMed unidMed;
 	
-	public Insumo(int idInsumo,String descripcion,unidMed unidadMed){
+	public Insumo(int idInsumo,String descripcion,unidadMed unidMed){
 		this.idInsumo=idInsumo;
 		this.descripcion=descripcion;
-		this.unidadMed=unidadMed;
+		this.unidMed=unidMed;
 	}
 	
 	public void setidInsumo(int idInsumo){

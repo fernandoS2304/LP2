@@ -1,9 +1,10 @@
 import java.util.Date;
+import java.text.SimpleDateFormat;
 enum estadoPedido{Aprobado,Pendiente,Listo,Cancelado};
 public class Pedido{
 	private int idPedido;
 	private estadoPedido estadoPed;
-	private usuario cuentaUs;
+	//private usuario cuentaUs;
 	private Date fechaRegPed;
 	private Date fechaEntrPed;
 	
@@ -12,14 +13,18 @@ public class Pedido{
 		fechaEntrPed=new Date();
 	}
 	
-	public Almacen(int idPedido,estadoPedido estadoPed,usuario cuentaUs,Date fechaRegPed,Date fechaEntrPed){
+	public Pedido(int idPedido,estadoPedido estadoPed,String fechaRegPed,String fechaEntrPed){
 		this.idPedido=idPedido;
 		this.estadoPed=estadoPed;
-		this.cuentaUs=cuentaUs;
-		SimpleDateFormat formt=new SimpleDateFormat("dd/MM/yyyy");
-		this.fechaRegPed=formt.parse(fechaRegPed);
-		SimpleDateFormat formt=new SimpleDateFormat("dd/MM/yyyy");
-		this.fechaEntrPed=formt.parse(fechaEntrPed);
+		//this.cuentaUs=cuentaUs;
+		
+		fechaRegPed=new Date();
+		fechaEntrPed=new Date();
+		SimpleDateFormat formt1=new SimpleDateFormat("dd/MM/yyyy");
+		this.fechaRegPed=formt1.parse(fechaRegPed);
+		SimpleDateFormat formt2=new SimpleDateFormat("dd/MM/yyyy");
+		this.fechaEntrPed=formt2.parse(fechaEntrPed);
+		
 		//this.setfechaRegPed(fechaRegPed);
 		//this.setfechaEntrPed(fechaEntrPed);
 	}
@@ -38,12 +43,12 @@ public class Pedido{
 		return this.estadoPed;
 	}
 	
-	public void setcuentaUsPedo(usuario cuentaUs){
-		this.cuentaUs=cuentaUs;
-	}
-	public usuario getcuentaUs(){
-		return this.cuentaUs;
-	}
+	// public void setcuentaUsPedo(usuario cuentaUs){
+		// this.cuentaUs=cuentaUs;
+	// }
+	// public usuario getcuentaUs(){
+		// return this.cuentaUs;
+	// }
 	
 	public void setfechaRegPed(String fechaRegPed)throws Exception{
 		SimpleDateFormat formt=new SimpleDateFormat("dd/MM/yyyy");

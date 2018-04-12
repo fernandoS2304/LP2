@@ -23,7 +23,7 @@ public class Empleado{
 	 	this.turno=turno;   
 	}
 
-	public turno getTurno(){
+	public Turno getTurno(){
 	    return turno;
 	}
 	

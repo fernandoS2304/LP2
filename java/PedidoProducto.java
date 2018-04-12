@@ -1,12 +1,16 @@
+import java.util.ArrayList;
+
 public class PedidoProducto extends Pedido{
 	private Cliente cliente;
-	private ProductoPedido prodPed;
+	private ArrayList<Integer> listproductos;
+	private ArrayList<Integer> listcantidades;
 	private DocumentoPago documPago;
 	
-	public PedidoProducto(Cliente cliente,ProductoPedido prodPed,DocumentoPago documPago){
+	public PedidoProducto(Cliente cliente,DocumentoPago documPago){
 		this.cliente=cliente;
-		this.prodPed=prodPed;
 		this.documPago=documPago;
+		listcantidades= new ArrayList<int>();
+		listproductos= new ArrayList<int>();
 	}
 	
 	public void setcliente(Cliente cliente){
@@ -14,20 +18,22 @@ public class PedidoProducto extends Pedido{
 	}
 	public Cliente getcliente(){
 		return this.cliente;		
-	}
-	
-	public void setprodPed(ProductoPedido prodPed){
-		this.prodPed=prodPed;
-	}
-	public ProductoPedido getprodPed(){
-		return this.prodPed;		
-	}
+	}	
 	
 	public void setdocumPago(DocumentoPago documPago){
 		this.documPago=documPago;
 	}
 	public DocumentoPago getdocumPago(){
 		return this.documPago;		
+	}
+	
+	public ArrayList<Integer> getlistproductos(){
+		return listproductos;
+	}
+		
+		
+	public ArrayList<Integer> getlistcantidades(){
+		return listcantidades;
 	}
 	
 	

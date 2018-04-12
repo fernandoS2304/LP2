@@ -1,1 +1,1 @@
-private enum Turno {manhana, tarde, noche}
+public enum Turno {manhana, tarde, noche}

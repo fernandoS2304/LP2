@@ -1,4 +1,4 @@
-public abstract class Cliente (){
+public abstract class Cliente{
 	private int id_cliente;
 	private int telefono;
 	private String direccion;
@@ -35,7 +35,7 @@ public abstract class Cliente (){
 	}
 	
 	public String getDireccion(){
-	    return Direccion;
+	    return direccion;
 	}
 
 	public void setCuentaBancaria(String cuentaBancaria){

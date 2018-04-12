@@ -45,4 +45,7 @@ public class pedidoInsumo : pedido{
 			_almacenFin = value;
 		}
 	}
+	
+	public void realizarPedidoInsumo(int codInsumo,int cant){
+	}
 }

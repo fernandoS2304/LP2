@@ -77,5 +77,4 @@ public class Pedido{
 		return this.fechaEntrPed;
 	}
 	
-	
 }

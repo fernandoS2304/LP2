@@ -61,4 +61,21 @@ public class Panaderia{
 			return telefono;
 		}
 	}
+	
+	public void registrarUsuario(string nombU,string contra){
+		
+	}
+	public void llenarAlmacen(string nombAlmacen){
+				
+	}
+	public void ingresarPedidoProducto(int codigoProducto,int cantidad){
+		
+	}
+	public void ingresarPedidoInsumos(int insumo,int cantidad){
+		
+	}
+	
+	public void imprimirDocPago(){
+		
+	}
 }

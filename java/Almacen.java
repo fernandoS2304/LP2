@@ -33,4 +33,10 @@ public class Almacen{
 		return this.listIngrediente;
 	}
 	
+	public void reporteInventario(){
+	}
+	
+	public void movimientoDeInsumo(int codInsumo){
+	}
+	
 }

@@ -70,5 +70,9 @@ public class documentoPago{
 			_registrada = value;
 		}
 	}
+	
+	public void imprimirDocPago(){
+
+	}
 
 }

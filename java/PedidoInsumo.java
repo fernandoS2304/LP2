@@ -33,4 +33,7 @@ public class PedidoInsumo extends Pedido{
 	public Almacen getalmacenFin(){
 		return this.almacenFin;
 	}
+	
+	public void realizarPedidoInsumo(int codInsumo,int cant){
+	}
 }

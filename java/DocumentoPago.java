@@ -58,5 +58,9 @@ public class DocumentoPago{
 	public boolean getregistrada(){
 		return this.registrada;		
 	}
+	
+	public void imprimirDocPago(){
+
+	}
 
 }

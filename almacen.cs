@@ -38,4 +38,10 @@ public class almacen{
 			_stock = value;
 		}
 	}
+	
+	public void reporteInventario(){
+	}
+	
+	public void movimientoDeInsumo(int codInsumo){
+	}
 }

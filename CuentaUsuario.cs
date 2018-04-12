@@ -59,6 +59,13 @@ using System.Threading.Tasks;
 	    		permiso = value;
 	    	}
 	    }
+		
+		public void verificacionDatos(string contras){
+		}
+		
+		public void registrarUsario(string nombreUsuario,string contrasenha){
+		}
+		
 =======
 >>>>>>> 7f0dc62dc82c8ea4ce7b9b11c5c971f9f7a7b3f3
         

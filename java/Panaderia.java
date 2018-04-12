@@ -53,14 +53,14 @@ public class Panaderia{
 		this.telefono=telefono;
 	}	
 	
-	public void agregarCliente(Empresa c){
-		Cliente t=(Cliente) c;
-		clientes.add(t);
-	}
-	public void agregarCliente(Natural c){
-		Cliente t=(Cliente) c;
-		clientes.add(t);
-	}
+	// public void agregarCliente(Empresa c){
+		// Cliente t=(Cliente) c;
+		// clientes.add(t);
+	// }
+	// public void agregarCliente(Natural c){
+		// Cliente t=(Cliente) c;
+		// clientes.add(t);
+	// }
 	// public String consultarClientes(int i){
 		// String cadena="";
 		// Cliente m;
@@ -78,16 +78,20 @@ public class Panaderia{
 		// }
 		// return cadena;
 	// }
-	public void registrarUsuario(String nombU,String contrase){
+	public void registrarUsuario(String nombU,String contra){
 		
 	}
 	public void llenarAlmacen(String nombAlmacen){
 				
 	}
-	public void ingresarPedidoProducto(){
+	public void ingresarPedidoProducto(int codigoProducto,int cantidad){
 		
 	}
-	public void ingresarPedidoInsumos(){
+	public void ingresarPedidoInsumos(int insumo,int cantidad){
+		
+	}
+	
+	public void imprimirDocPago(){
 		
 	}
 	

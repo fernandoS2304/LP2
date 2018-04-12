@@ -45,4 +45,17 @@ public class pedidoProducto : pedido{
 			_docPago = value;
 		}
 	}
+	
+	public void RealizarPedidoProducto(int codProd,int cant){
+	}
+	
+	public int subtotal(){
+	}
+	
+	public void registrarDocPago(){
+	}
+	
+	public void imprimirDocPago(){
+		
+	}
 }

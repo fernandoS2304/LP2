@@ -36,5 +36,16 @@ public class PedidoProducto extends Pedido{
 		return listcantidades;
 	}
 	
+	public void RealizarPedidoProducto(int codProd,int cant){
+	}
 	
+	public int subtotal(){
+	}
+	
+	public void registrarDocPago(){
+	}
+	
+	public void imprimirDocPago(){
+		
+	}
 }
